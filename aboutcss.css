@@ -1,0 +1,63 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.sideNav {
+    background-color: #00062A;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.sideNav a {
+    display: block;
+    padding-top: 5%;
+    padding-left: 5%;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+.sideNav a:hover {
+    color: lightgray;
+}
+.sideNav .closeButton {
+    position: absolute;
+    top: 0;
+    margin-left: 85%;
+}
+.mainScreen {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.goodfreephotos.com/cache/japan/other-japan/mount-fuji-landscape-in-japan_800.jpg?cached=1522370829");
+    background-color: lightblue;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-style: none;
+    transition: 0.6s;
+}
+.mainText {
+    text-align: left;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: white;
+}
+h1 {
+    font-weight: normal;
+    display: inline;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    font-weight: normal;
+    font-size: 20px;
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    color: lightcoral;
+}
