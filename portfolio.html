@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Personal Webpage for Alexcia Proeve -->
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content = "ie-edge">
+    <title>Alexcia Proeve</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "portfoliocss.css">
+</head>
+<body>
+    <!-- Hero div containing the side navigation bar -->
+    <div id = "main" class = "mainScreen">
+        <!-- "Button" used to open/close the side bar -->
+        <span class = "openSideBar">
+            <a href = "#" onclick = "openSideBar()" >
+                <svg class = "threelines" width = "30" height = "30">
+                    <path d = "M5,7 30,7" stroke = "#FFF" stroke-width = "1.5"/>
+                    <path d = "M5,16 30,16" stroke = "#FFF" stroke-width = "1.5"/>
+                    <path d = "M5,25 30,25" stroke = "#FFF" stroke-width = "1.5"/>
+                </svg>
+            </a>
+        </span>
+        <!-- Side navigation bar -->
+        <div id = "sideBar" class = "sideNav">
+            <!-- Close button and links displayed on side menu  -->
+            <a href = "#" class = "closeButton" onclick = "closeSideBar()">&times;</a>
+            <a href = "index.html">Home</a>
+            <a href = "about.html">About</a>
+            <a href = "portfolio.html">Portfolio</a>
+            <a href = "contact.html">Contact</a>
+        </div>
+        <!-- Text centered on the Hero page -->
+        <div class = "mainText">
+            <p style = "font-size:50px">Informal Art Portfolio</p>
+            <center><p>This is a work in progress.</p></center>
+        </div>
+    </div>
+    <!-- Script to open/close side navigation bar -->
+    <script>
+        //Opens side bar
+        function openSideBar() {
+            document.getElementById("sideBar").style.width = "20%";
+            document.getElementById("main").style.marginLeft = "20%";
+        }
+        //Closes side bar
+        function closeSideBar() {
+            document.getElementById("sideBar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+</body>
+</html>
